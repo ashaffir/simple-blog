@@ -1,17 +1,11 @@
-# Simple API project
+# Simple Blog API project
 
 A simple REST API based social network in Django where Users can sign up and create text posts, as well as view, like, and unlike other
 Users’ posts.
 
-# API Documentation
+# Run the server
 
-http://localhost:8999/api-docs/
-
-To see the list of the endpoints available, go to: /api-docs/
-
-# Run the program
-
-## Local server
+## Local
 
 ./manage runserver localhost:8999
 
@@ -19,6 +13,11 @@ To see the list of the endpoints available, go to: /api-docs/
 
 docker build -t tradecore-api -f DockerFile .
 docker run -p 8999:8999 tradecore-api
+
+# API Documentation
+
+To see the list of the endpoints available, go to:
+http://localhost:8999/api-docs/
 
 # Running tests
 
