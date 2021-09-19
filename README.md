@@ -3,13 +3,18 @@
 A simple REST API based social network in Django where Users can sign up and create text posts, as well as view, like, and unlike other
 Users’ posts.
 
-# Run the server
+# Run local server
 
-## Local
+1. Setup cirtual environment
+   python3 -m venv venv
+   . venv/bin/activate
 
-./manage runserver localhost:8999
+2. Install dependencies
+   pip install -r requirements.txt
 
-## Docker
+3. ./manage.py runserver localhost:8999
+
+# Docker
 
 docker build -t tradecore-api -f DockerFile .
 docker run -p 8999:8999 tradecore-api
@@ -25,9 +30,9 @@ http://localhost:8999/api-docs/
 
 # Production Notes
 
-- Make sure that the .env file with the real credentials, passwords, etc, is not uploaded to Github.
+- Add .env file with the real credentials, passwords, etc, to .gitignore so it is not uploaded to Github.
 
-# Admin
+# Admin (if using the DB in the repository)
 
 Username/Email: tradecore@tradecore.com
 Password: Tradecore2021
